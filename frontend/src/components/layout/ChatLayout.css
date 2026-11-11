@@ -1,0 +1,23 @@
+
+.chat-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--space-bg);
+}
+
+.chat-layout-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+}
+
+@media (max-width: 700px) {
+  .chat-layout {
+    flex-direction: column;
+  }
+
+  .chat-layout-main {
+    min-height: 70vh;
+  }
+}

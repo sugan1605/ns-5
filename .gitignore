@@ -1,15 +1,32 @@
+
+# =========================================
 # Environment variables and secrets
+# =========================================
 .env
 .env.*
 !.env.example
 
-# Node.js
+# AWS credentials
+.aws/
+
+# SSH private keys and certificates
+*.pem
+*.key
+id_rsa
+id_ed25519
+ns5_github
+
+# =========================================
+# Node.js / Frontend
+# =========================================
 node_modules/
 dist/
 build/
 .npm/
 
-# Python
+# =========================================
+# Python / Backend
+# =========================================
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -17,11 +34,15 @@ __pycache__/
 .venv/
 venv/
 
+# =========================================
 # Testing and coverage
+# =========================================
 .coverage
 htmlcov/
 
+# =========================================
 # Terraform
+# =========================================
 .terraform/
 *.tfstate
 *.tfstate.*
@@ -31,27 +52,14 @@ crash.log
 override.tf
 override.tf.json
 
+# =========================================
 # IDE and operating system
+# =========================================
 .vscode/
-.DS_Store
 .idea/
+.DS_Store
 
+# =========================================
 # Logs
+# =========================================
 *.log
-
-# Private keys and certificates
-*.pem
-*.key
-id_ed25519
-ns5_github
-
-
-# SSH private keys
-id_rsa
-id_ed25519
-ns5_github
-*.pem
-*.key
-
-# AWS credentials
-.aws/

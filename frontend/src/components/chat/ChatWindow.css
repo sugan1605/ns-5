@@ -1,0 +1,80 @@
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-width: 0;
+  height: 100vh;
+  min-height: 0;
+
+  padding: 28px;
+  gap: 20px;
+
+  overflow: hidden;
+
+  background: #10151d;
+  color: #dce5ef;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(177, 199, 220, 0.16);
+}
+
+.chat-terminal-label {
+  color: #8999aa;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+}
+
+.chat-header h2 {
+  margin: 7px 0 0;
+  color: #dce5ef;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.chat-connection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #9baabd;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+}
+
+.connection-indicator {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: #8bcb83;
+  box-shadow: 0 0 9px rgba(139, 203, 131, 0.6);
+}
+
+/* Cabin scene */
+.cabin-scene {
+  flex: 0 1 auto;
+  min-height: 300px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .chat-window {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .chat-connection {
+    font-size: 0.55rem;
+  }
+}
