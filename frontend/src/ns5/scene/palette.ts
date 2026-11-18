@@ -1,0 +1,20 @@
+/** 3D material colours — mirrors the CSS design tokens (three.js needs literal values). */
+export const P = {
+  space: "#10151D",
+  charcoal: "#151C26",
+  metal: "#252E3A",
+  metalHi: "#3A4554",
+  silver: "#A5B5C5",
+  soft: "#DCE5EF",
+  amber: "#F4B860",
+  amberDeep: "#C9873A",
+  green: "#78D69B",
+  cream: "#E8D2B5",
+  creamShade: "#CDB492",
+  burgundy: "#590907",
+  wine: "#7A1A16",
+  leaf: "#5E9C6E",
+  leafDark: "#3D6E4C",
+  planet: "#4E7FA6",
+  glass: "#0B0F15",
+};
